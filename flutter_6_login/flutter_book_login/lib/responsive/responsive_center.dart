@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+//레이아웃에 들어갈 값들을 정해줌
+
 class ResponsiveCenter extends StatelessWidget {
   const ResponsiveCenter({
     super.key,
@@ -15,12 +17,13 @@ class ResponsiveCenter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-        child: SizedBox(
-      width: maxContentWidth,
-      child: Padding(
-        padding: padding,
-        child: child,
+      child: SizedBox(
+        width: maxContentWidth,
+        child: Padding(
+          padding: padding,
+          child: child,
+        ),
       ),
-    ));
+    );
   }
 }
